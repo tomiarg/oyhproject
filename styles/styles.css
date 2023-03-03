@@ -1,0 +1,178 @@
+ @import url('https://fonts.cdnfonts.com/css/antique-wonders');
+    
+:root{
+    --fuenteHeading: 'Antique Wonders', sans-serif;;
+    --fuenteParrafos: 'PT Sans', sans-serif;
+
+    --primario: #784d3C;
+    --gris: #e1e1e1;
+    --blanco: #FFFF;
+    --negro: #000;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: 4px;
+}
+/*Globales*/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1, h2{
+    font-family: var(--fuenteHeading);
+}
+.view{
+    height: 60rem;
+}
+/* Utilidades */
+.noMargin{
+    margin:0;
+}
+.noPadding{
+    padding: 0;
+}
+.centrarTexto{
+    text-align: center;
+}
+/* header */
+ .header{
+    background-image: url(../img/rosa.jpg);
+}
+
+.header{    
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__texto{
+    color: var(--blanco);
+    padding-top: 15rem;
+}
+.parrafoHeader{
+    text-transform: uppercase;
+}
+@media (min-width: 768px){
+    .header__texto{
+        padding-top: 15rem;
+    }
+    .parrafoHeader{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+}
+.barra{
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+.logo{
+    color:var(--blanco);
+    
+}
+
+.logo__bold{
+    font-weight: normal;
+    font-size: 15rem;
+    text-transform: uppercase;
+    font-family: var(--fuenteHeading);
+}
+@media (min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+    
+}
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+@media (min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border: none;
+}
+.screen{
+    background-color: var(--blanco);
+    padding: 12px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    mix-blend-mode: screen;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+
+}
+.boton:hover{
+    cursor: pointer;
+}
+.boton--primario{
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+.boton--secundario{
+    background-color: var(--primario);
+}
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+}
+.contenedorHumano{
+    display: flex;
+    justify-content:  flex-end;
+
+}
+.parrafoHumano{
+    width: 600px;
+   
+}
+.imagenesGrid{
+    display: flex;
+    height: 37rem;
+}
+.margen20px{
+    margin-right:20px;
+}
+.amamos{
+    display:flex;
+    flex-direction: row;
+}
