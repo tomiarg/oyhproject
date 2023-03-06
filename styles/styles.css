@@ -172,7 +172,48 @@ h1, h2{
 .margen20px{
     margin-right:20px;
 }
+/*amamos lo que hacemos*/
+.amamosTitulo{
+    padding: 1rem;
+}
 .amamos{
     display:flex;
     flex-direction: row;
+    width: 100%;
+    height: 81vh;
+
+}
+.acciones{
+    width: 33.33%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.acciones:first-child{
+    background-image: url(../img/rosa.jpg);
+    background-size: cover;
+}
+.acciones:nth-child(2){
+    background-image: url(../img/rosa.jpg);
+    background-size: cover;
+}
+.acciones:last-child{
+    background-image: url(../img/rosa.jpg);
+    background-size: cover;
+}
+.blanco{
+    margin: 10px;
+    height:100px;
+    background-color: var(--blanco);
+}
+.blanco h3{
+    margin-bottom: 0px;
+    margin-top:0px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.blanco p{
+    margin-top: 0px;
+    font-size: 15px;
 }
