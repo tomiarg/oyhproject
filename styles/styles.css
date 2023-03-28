@@ -4,7 +4,12 @@
     --fuenteHeading: 'Antique Wonders', sans-serif;;
     --fuenteParrafos: 'PT Sans', sans-serif;
 
-    --primario: #784d3C;
+    --primario: #E06034;
+    --secundario: #E8A833;
+    --rosa: #FDE7D6;
+    --azul: #5F5FD3;
+    --marron: #A1431B;
+    --crema:#FCF5EB;
     --gris: #e1e1e1;
     --blanco: #FFFF;
     --negro: #000;
@@ -31,9 +36,13 @@ a{
 }
 h1, h2{
     font-family: var(--fuenteHeading);
+    color: var(--blanco);
+}
+h2{
+    color:var(--marron);
 }
 .view{
-    height: 60rem;
+    height: 65rem;
 }
 /* Utilidades */
 .noMargin{
@@ -47,7 +56,7 @@ h1, h2{
 }
 /* header */
  .header{
-    background-image: url(../img/rosa.jpg);
+    background-image: url(../img/1.png);
 }
 
 .header{    
@@ -169,6 +178,31 @@ h1, h2{
     display: flex;
     height: 37rem;
 }
+.img2{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/3.png);
+    background-size: cover;
+
+}
+@media (min-width: 768px){
+    .img1{
+        height: 100%;
+        width: 25%;
+        background-image: url(../img/6.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .img2{
+        height: 100%;
+        width: 75%;
+        background-image: url(../img/3.png);
+        background-size: cover;
+    }
+    
+}
+
 .margen20px{
     margin-right:20px;
 }
@@ -177,30 +211,37 @@ h1, h2{
     padding: 1rem;
 }
 .amamos{
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-    height: 81vh;
+    background-image: url(../img/7.png);
+}
+@media (min-width: 768px){
+    .amamos{
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        height: 81vh;
+    
+    }
+    .acciones{
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .acciones:first-child{
+        background-image: url(../img/7.png);
+        background-size: cover;
+    }
+    .acciones:nth-child(2){
+        background-image: url(../img/9.png);
+        background-size: cover;
+    }
+    .acciones:last-child{
+        background-image: url(../img/10.png);
+        background-size: cover;
+    }
+    
+}
 
-}
-.acciones{
-    width: 33.33%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.acciones:first-child{
-    background-image: url(../img/rosa.jpg);
-    background-size: cover;
-}
-.acciones:nth-child(2){
-    background-image: url(../img/rosa.jpg);
-    background-size: cover;
-}
-.acciones:last-child{
-    background-image: url(../img/rosa.jpg);
-    background-size: cover;
-}
 .blanco{
     margin: 10px;
     height:100px;
@@ -216,4 +257,62 @@ h1, h2{
 .blanco p{
     margin-top: 0px;
     font-size: 15px;
+}
+.enlace--ig{
+    display: none;
+}
+.grid{
+    height: 100%;
+    background-image: url(../img/11.png);
+    background-size: cover;
+    text-align: center;
+    
+}
+@media (min-width: 768px){
+    .grid{
+        background-image: none;
+        margin-top:40px;
+        height: 95%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;    
+    
+    }
+    .grid--instagram{
+        grid-column: 1/ 4;
+        grid-row: 1/ 4;
+        background-image: url(../img/11.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .grid--instagram h1, .grid--instagram p{
+        padding-top:5px;
+        color: white;
+        text-align: center;
+    }
+    .enlace--ig{
+        display: block;
+    }
+}
+.nosotras{
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-around;
+}
+.imgNosotras{
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 50rem;
+    height: 100%;
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+}
+.textoNosotras{
+    padding-top: 40px;
+    color:var(--blanco);
+    width: 50rem;
+}
+.textoNosotras h1{
+    text-align: center;
 }
