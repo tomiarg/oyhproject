@@ -39,6 +39,7 @@ h1, h2{
     color: var(--blanco);
 }
 h2{
+    font-size: 32px;
     color:var(--marron);
 }
 .view{
@@ -301,13 +302,24 @@ h2{
     justify-content: space-around;
 }
 .imgNosotras{
-    padding-top: 40px;
-    padding-left: 40px;
-    width: 50rem;
-    height: 100%;
-    border-top-left-radius: 180px;
-    border-top-right-radius: 180px;
+    display:none;
+
 }
+@media (min-width: 768px){
+
+    .imgNosotras{
+        display: block;
+        padding-top: 40px;
+        padding-left: 40px;
+        width: 50rem;
+        height: 100%;
+        border-top-left-radius: 180px;
+        border-top-right-radius: 180px;
+    }
+    
+}
+
+
 .textoNosotras{
     padding-top: 40px;
     color:var(--blanco);
@@ -315,4 +327,38 @@ h2{
 }
 .textoNosotras h1{
     text-align: center;
+}
+.clientes{
+    background-color: var(--rosa);
+}
+.clientes--flex{
+    height: 120px;
+    width: 120px;
+    display:flex;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.clientes--div{
+    width: 17rem;
+    height: 17rem;
+    margin:1rem;
+    display: flex;
+}
+.flexHacemos{
+    padding-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flexHacemos--flex{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;    
+}
+.flexHacemos--flex h3, .flexHacemos--flex p{
+   line-height: 0;
 }
