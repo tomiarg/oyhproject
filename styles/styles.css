@@ -254,10 +254,26 @@ h2{
     font-weight: 900;
     letter-spacing: 2px;
 }
+.pink{
+    color:var(--primario);
+}
+.yellow{
+    color:var(--secundario);
+}
+.blue{
+    color:var(--azul);
+}
 
 .blanco p{
     margin-top: 0px;
     font-size: 15px;
+}
+.ig-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--blanco);
+    display: flex;
+    justify-content: flex-end;
 }
 .enlace--ig{
     display: none;
@@ -338,27 +354,62 @@ h2{
     justify-content: space-between;
 }
 main{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px){
+    main{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;    
+    }
+    
 }
 .clientes--div{
-    width: 17rem;
-    height: 17rem;
     margin:1rem;
     display: flex;
 }
 .flexHacemos{
-    padding-top: 15rem;
+    height: 35rem;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     flex-wrap: wrap;
+}
+
+.flexHacemos h2{
+    padding-left: 0rem;
+}
+
+@media (min-width: 970px){
+    .flexHacemos h2{
+        width: 40%;
+        text-transform: uppercase;
+        padding-left: 10rem;
+        padding-right: 0rem;
+        font-size: 6rem;
+    }
+ 
+    
+}
+.flexHacemos--img{
+    width: 100%;
+    height: 25rem;
+    background-image: url(../img/14.png);
+    background-size: cover;
+    background-position: center;
 }
 .flexHacemos--flex{
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    flex-direction: column;    
+    justify-content: space-around;
+    color:var(--marron);
 }
+
 .flexHacemos--flex h3, .flexHacemos--flex p{
    line-height: 0;
 }
+.ancla{
+    color:var(--marron)
+}
+
