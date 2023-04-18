@@ -213,10 +213,15 @@ h2{
 }
 .amamos{
     background-image: url(../img/7.png);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 @media (min-width: 768px){
     .amamos{
-        display:flex;
         flex-direction: row;
         width: 100%;
         height: 81vh;
@@ -335,40 +340,55 @@ h2{
     
 }
 
-
 .textoNosotras{
-    padding-top: 40px;
-    color:var(--blanco);
+    color: var(--blanco);
     width: 50rem;
+    padding-left: 0;
+    margin: 0 auto;
+    padding: 7rem 5rem;
+}
+
+@media (min-width: 768px){
+    .textoNosotras{
+        padding-top: 40px;
+        width: 50rem;
+    }
+    
 }
 .textoNosotras h1{
     text-align: center;
 }
 .clientes{
-    background-color: var(--rosa);
-}
-.clientes--flex{
-    height: 120px;
-    width: 120px;
-    display:flex;
-    justify-content: space-between;
-}
-main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: none;
 }
 
 @media (min-width: 768px){
+    .clientes{
+        display: block;
+        background-color: var(--rosa);
+    }
+    .clientes--flex{
+        height: 120px;
+        width: 120px;
+        display:flex;
+        justify-content: space-between;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     main{
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;    
     }
+    .clientes--div{
+        margin:1rem;
+        display: flex;
+    }
     
 }
-.clientes--div{
-    margin:1rem;
-    display: flex;
-}
+
 .flexHacemos{
     height: 35rem;
     display: flex;
