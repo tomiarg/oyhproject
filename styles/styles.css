@@ -54,7 +54,7 @@ h2{
 }
 /* header */
  .header{
-    background-image: url(../img/1.png);
+    background-image: url(../img/1.webp);
 }
 
 .header{    
@@ -184,7 +184,7 @@ h2{
 .img2{
     height: 100%;
     width: 100%;
-    background-image: url(../img/3.png);
+    background-image: url(../img/3.webp);
     background-size: cover;
 
 }
@@ -192,7 +192,7 @@ h2{
     .img1{
         height: 100%;
         width: 25%;
-        background-image: url(../img/6.png);
+        background-image: url(../img/6.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -200,7 +200,7 @@ h2{
     .img2{
         height: 100%;
         width: 75%;
-        background-image: url(../img/3.png);
+        background-image: url(../img/3.webp);
         background-size: cover;
     }
     
@@ -214,7 +214,7 @@ h2{
     padding: 1rem;
 }
 .amamos{
-    background-image: url(../img/7.png);
+    background-image: url(../img/7.webp);
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -236,15 +236,15 @@ h2{
         justify-content: center;
     }
     .acciones:first-child{
-        background-image: url(../img/7.png);
+        background-image: url(../img/7.webp);
         background-size: cover;
     }
     .acciones:nth-child(2){
-        background-image: url(../img/9.png);
+        background-image: url(../img/9.webp);
         background-size: cover;
     }
     .acciones:last-child{
-        background-image: url(../img/10.png);
+        background-image: url(../img/10.webp);
         background-size: cover;
     }
     
@@ -288,7 +288,7 @@ h2{
 }
 .grid{
     height: 100vh;
-    background-image: url(../img/11.png);
+    background-image: url(../img/11.webp);
     background-size: cover;
     text-align: center;
     margin-bottom: 2.5rem;
@@ -309,7 +309,7 @@ h2{
     .grid--instagram{
         grid-column: 1/ 4;
         grid-row: 1/ 4;
-        background-image: url(../img/11.png);
+        background-image: url(../img/11.webp);
         background-repeat: no-repeat;
         background-size: cover;
        
