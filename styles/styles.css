@@ -328,19 +328,23 @@ h2{
     display: flex;
     justify-content: space-around;
 }
-.imgNosotras{
+.imgenNosotras{
     display:none;
 
 }
 @media (min-width: 768px){
 
 
-    .imgNosotras{
-        display: block;
+    .imgenNosotras{
+        display: inline;
         padding-top: 40px;
         padding-left: 40px;
-        width: 50rem;
-        height: 100%;
+        margin-bottom:0;
+        padding-bottom: 0;    
+        width: 50%;
+        height: 55rem;
+    }
+    .pictureNosotras{
         border-top-left-radius: 180px;
         border-top-right-radius: 180px;
     }
