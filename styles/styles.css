@@ -382,7 +382,7 @@ h2{
         height: 120px;
         width: 120px;
         display:flex;
-        justify-content: space-between;
+
     }
     main{
         display: grid;
@@ -391,11 +391,12 @@ h2{
     
     main{
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;    
+        gap: 1rem;  
     }
     .clientes--div{
         margin:1rem;
         display: flex;
+        justify-content: center;
     }
     
 }
