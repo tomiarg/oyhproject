@@ -275,27 +275,46 @@ h2{
     margin-top: 0px;
     font-size: 15px;
 }
+/*Instagram*/
+
 .ig-link{
     text-transform: uppercase;
     text-decoration: none;
     color:var(--blanco);
     display: flex;
-    justify-content: flex-end;
     padding-right: 1.6rem;
 }
-.enlace--ig{
-    display: none;
-}
+
 .grid{
-    height: 100vh;
-    background-image: url(../img/11.webp);
-    background-size: cover;
-    text-align: center;
-    margin-bottom: 2.5rem;
+        height: 100vh;
+        text-align: center;
+        background-image: none;
+        margin-top:1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem;    
+        padding-bottom: 2.5rem;
     
-}
+    }
+    .grid--instagram{
+        grid-column: 1/ 4;
+        background-image: url(../img/11.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+     .enlace--ig{
+        display: block;
+    }
+   .grid--instagram h1, .grid--instagram p{
+        padding-top:5px;
+        color: white;
+    }
 @media (min-width: 768px){
     .grid{
+        height: 100vh;
+        text-align: center;
         background-image: none;
         margin-top:40px;
         display: grid;
@@ -314,11 +333,10 @@ h2{
         background-size: cover;
        
     }
-    .grid--instagram h1, .grid--instagram p{
-        padding-top:5px;
-        color: white;
-        text-align: center;
+    .ig-link{
+    justify-content: flex-end;  
     }
+
     .enlace--ig{
         display: block;
     }
