@@ -420,7 +420,6 @@ h2{
 }
 
 .flexHacemos{
-    height: 35rem;
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
@@ -462,4 +461,78 @@ h2{
 .ancla{
     color:var(--marron)
 }
+/*Eventos*/
+.h1evento{
+    color:var(--primario);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    margin-bottom: 0;
+    font-family: var(--fuenteHeading);
+
+}
+.gridEvento{
+    text-align: center;
+    background-image: none;
+    margin-top:1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;    
+    padding-bottom: 2.5rem;
+    line-height: 10rem;
+
+}
+ .enlace--ig{
+    display: block;
+}
+.grid--instagram h1, .grid--instagram p{
+    padding-top:5px;
+    color: white;
+}
+@media (min-width: 768px){
+.gridEvento{
+    text-align: center;
+    background-image: none;
+    margin-top:40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;    
+    padding: 2.5rem;
+    margin: 6rem;
+    line-height: 10rem;
+
+}
+.eventoEspecial{
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+}
+/*Footer*/
+footer{
+    background-color: var(--crema);
+}
+.footer{
+    padding:2.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:var(--marron);
+  
+}
+footer h3{
+    font-family: var(--fuenteParrafos);
+}
+
+footer h3, p{
+    color:var(--marron);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+footer .ancla{
+    text-decoration: underline;
+}
+
 
