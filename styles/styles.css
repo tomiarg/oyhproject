@@ -513,26 +513,26 @@ footer{
     background-color: var(--crema);
 }
 .footer{
-    padding:2.5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     color:var(--marron);
+    align-items: center;
   
 }
-footer h3{
-    font-family: var(--fuenteParrafos);
-}
 
-footer h3, p{
+
+.footerDeco{    
     color:var(--marron);
     text-align: center;
     margin: 0;
     padding: 0;
 }
-footer .ancla{
-    text-decoration: underline;
+.footerFlex{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
 }
 
 
