@@ -23,8 +23,8 @@ html{
 }
 body{
     font-size: 1.6rem;
-    line-height: 2;
-    letter-spacing: 4px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
 }
 /*Globales*/
 .contenedor{
@@ -500,7 +500,6 @@ h2{
     gap: 2rem;    
     padding: 2.5rem;
     margin: 6rem;
-    line-height: 10rem;
 
 }
 .eventoEspecial{
@@ -531,8 +530,18 @@ footer{
 }
 .footerFlex{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     gap: 2rem;
+    font-size: small;
+}
+
+
+@media (min-width: 768px){
+    .footerFlex{
+        flex-direction:row;
+        justify-content: space-around;
+ 
+    }
 }
 
 
