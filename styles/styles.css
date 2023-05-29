@@ -222,6 +222,12 @@ h2{
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
+.blanco{
+    margin: 10px;
+    height:100px; 
+    width: 97%;  
+    background-color: var(--blanco);
+}
 @media (min-width: 768px){
     .amamos{
         flex-direction: row;
@@ -247,14 +253,13 @@ h2{
         background-image: url(../img/10.webp);
         background-size: cover;
     }
+    .blanco{
+        width: 30rem;
+    }
     
 }
 
-.blanco{
-    margin: 10px;
-    height:100px;
-    background-color: var(--blanco);
-}
+
 .blanco h3{
     margin-bottom: 0px;
     margin-top:0px;
@@ -276,6 +281,14 @@ h2{
     font-size: 15px;
 }
 /*Instagram*/
+.instaTitulo{
+    font-size: 4.2rem;
+    margin-bottom: 0;
+}
+.instaParr{
+    font-size: 2.4rem;
+    margin-top: 0;
+}
 
 .ig-link{
     text-transform: uppercase;
@@ -283,6 +296,8 @@ h2{
     color:var(--blanco);
     display: flex;
     padding-right: 1.6rem;
+    
+    justify-content: center;
 }
 
 .grid{
@@ -335,6 +350,7 @@ h2{
     }
     .ig-link{
     justify-content: flex-end;  
+    margin-top: 20rem;
     }
 
     .enlace--ig{
@@ -394,7 +410,7 @@ h2{
 @media (min-width: 768px){
     .clientes{
         display: block;
-        background-color: var(--rosa);
+        background-color: darkkhaki;
     }
     .clientes--flex{
         height: 120px;
@@ -429,15 +445,17 @@ h2{
     padding-left: 0rem;
 }
 
-@media (min-width: 970px){
+@media (min-width: 768px){
+    .flexHacemos{
+        justify-content: flex-start;
+    }
     .flexHacemos h2{
         width: 40%;
         text-transform: uppercase;
-        padding-left: 10rem;
         padding-right: 0rem;
-        font-size: 6rem;
+        padding-left: 5rem;
+        font-size: 4.2rem;
     }
- 
     
 }
 .flexHacemos--img{
@@ -451,10 +469,14 @@ h2{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color:var(--marron);
 }
-
+@media (min-width: 768px){
+  .flexHacemos--flex{
+    padding-left: 5rem;
+  }
+}
 .flexHacemos--flex h3, .flexHacemos--flex p{
    line-height: 0;
 }
